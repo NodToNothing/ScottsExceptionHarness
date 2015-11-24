@@ -1,0 +1,8 @@
+c:\users\u0024159\documents\visual studio 2013\Projects\ScottsExceptionHarness\ScottsExceptionHarness\bin\Debug\ScottsExceptionHarness.exe.config
+c:\users\u0024159\documents\visual studio 2013\Projects\ScottsExceptionHarness\ScottsExceptionHarness\bin\Debug\ScottsExceptionHarness.exe
+c:\users\u0024159\documents\visual studio 2013\Projects\ScottsExceptionHarness\ScottsExceptionHarness\bin\Debug\ScottsExceptionHarness.pdb
+c:\users\u0024159\documents\visual studio 2013\Projects\ScottsExceptionHarness\ScottsExceptionHarness\bin\Debug\Polly.dll
+c:\users\u0024159\documents\visual studio 2013\Projects\ScottsExceptionHarness\ScottsExceptionHarness\bin\Debug\Polly.xml
+c:\users\u0024159\documents\visual studio 2013\Projects\ScottsExceptionHarness\ScottsExceptionHarness\obj\Debug\ScottsExceptionHarness.csprojResolveAssemblyReference.cache
+c:\users\u0024159\documents\visual studio 2013\Projects\ScottsExceptionHarness\ScottsExceptionHarness\obj\Debug\ScottsExceptionHarness.exe
+c:\users\u0024159\documents\visual studio 2013\Projects\ScottsExceptionHarness\ScottsExceptionHarness\obj\Debug\ScottsExceptionHarness.pdb
