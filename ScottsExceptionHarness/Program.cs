@@ -8,6 +8,11 @@ using System.Threading;
 using System.IO;
 
 //Standard Exception Types: https://msdn.microsoft.com/library/ms229007(v=vs.100).aspx
+//See Also
+//https://github.com/michael-wolfenden/Polly
+//http://www.hanselman.com/blog/NuGetPackageOfTheWeekPollyWannaFluentlyExpressTransientExceptionHandlingPoliciesInNET.aspx
+//http://putridparrot.com/blog/exception-handling-policies-with-polly/
+
 
 namespace ScottsExceptionHarness
 {
