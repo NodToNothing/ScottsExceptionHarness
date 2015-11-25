@@ -59,6 +59,12 @@ namespace ScottsExceptionHarness
 				Console.WriteLine("Divide by Zero Exception - Calculated Retry Count: " + retryAttempt + "; Timespan: " + timeSpan);
 			});
 
+			int globalVariable = 0;
+			var policy2e = Policy.Handle<DivideByZeroException>().RetryForever((ex, context) =>
+			 {
+				 Console.WriteLine("Divide by Zero Exception - RetryForever: " + globalVariable++);
+			 });
+
 
 
 			//before it resets, can't execute again
@@ -155,10 +161,11 @@ namespace ScottsExceptionHarness
 				Console.WriteLine();
 			}
 
+
 			/////////////////////////////////////////////////////
 			///Policy 3 - Circuit Breaker
 			/////////////////////////////////////////////////////
-			for (int i = 0; i < 50; i++)
+			for (int i = 0; i < 30; i++)
 			{
 				//to show the Circuit Breaker (policy3) in action - remove this and the loop for policy1 and policy 2
 				Thread.Sleep(1000);
@@ -176,6 +183,23 @@ namespace ScottsExceptionHarness
 					//Console.WriteLine();
 				}
 
+			}
+
+			/////////////////////////////////////////////////////
+			///Policy 2e - Retry Forever
+			/////////////////////////////////////////////////////
+			try
+			{
+				int x;
+				int y = 6;
+				int z = 0;
+				//policy.Execute(() => x = y/z);
+				policy2e.Execute(() => service.remotething(y, z));
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e.Message);
+				Console.WriteLine();
 			}
 
 
